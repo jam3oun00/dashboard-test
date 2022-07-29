@@ -1,0 +1,110 @@
+.v-btn {
+  box-shadow: none !important;
+  &:not(.theme--dark) {
+    span {
+      color: var(--v-primary-base);
+    }
+  }
+  span.v-btn__content {
+    text-transform: initial !important;
+    letter-spacing: normal !important;
+    font-weight: 600 !important;
+  }
+  &:focus::before {
+    display: none !important;
+  }
+  &:hover::before {
+    display: none !important;
+  }
+}
+.v-ripple__container {
+  display: none !important;
+}
+.v-menu__content {
+  box-shadow: 0px 10px 49px rgba(0, 0, 0, 0.13) !important;
+  border-radius: 12px !important;
+  // .v-list-item__title,
+  .v-list-item {
+    font-weight: 600 !important;
+  }
+}
+.v-pagination {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 35px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  li > span,
+  li > button {
+    margin: 5px 7px !important;
+    &,
+    * {
+      font-weight: 500 !important;
+    }
+  }
+  .v-pagination__more {
+    color: var(--v-accent-base) !important;
+  }
+  .v-pagination__item {
+    color: var(--v-primary-base) !important;
+    &:not(.v-pagination__item--active) {
+      color: var(--v-accent-base) !important;
+    }
+  }
+  .v-pagination__navigation {
+    &:not(.v-pagination__navigation--disabled) {
+      background-color: var(--v-accent-base) !important;
+    }
+    &.v-pagination__navigation--disabled {
+      background-color: var(--v-accentlight-base) !important;
+      opacity: 1 !important;
+    }
+  }
+  .v-pagination__more {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-bottom: 6px;
+  }
+  button {
+    border-radius: 50px !important;
+    box-shadow: none !important;
+  }
+}
+.v-data-table.f {
+  border-radius: 20px !important;
+  th,
+  tr,
+  td {
+    border-color: var(--v-lighty-base) !important;
+  }
+  @media #{map-get($display-breakpoints, 'lg-and-up')} {
+    .v-data-table-header {
+      min-height: 70px !important;
+      height: 70px !important;
+      max-height: 70px !important;
+      * {
+        color: var(--v-primary-base);
+      }
+      i.v-data-table-header__icon {
+        margin: 0 3px 6px 3px !important;
+      }
+      th {
+        span {
+          font-weight: 500 !important;
+          font-size: 18px !important;
+        }
+      }
+    }
+    tbody {
+      tr {
+        min-height: 74px !important;
+        height: 74px !important;
+        max-height: 74px !important;
+      }
+    }
+  }
+}
+.v-divider {
+  border-color: var(--v-lighty-base) !important;
+}

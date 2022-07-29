@@ -1,0 +1,19 @@
+$body-font-family: 'Poppins', 'Cairo', sans-serif;
+$navigation-drawer-mobile-temporary-elevation: 0;
+$dialog-border-radius: 15px;
+$dialog-elevation: 0;
+/*=====
+variables helper
+=====*/
+:root {
+  // colors
+  --main-color: #ffcb05;
+  --light-main-color: #fffae6;
+  --dark-color: #001556;
+  --secondary-color: #a2a5ac;
+
+  --success-color: #4cbc9a;
+  --danger-color: #ff3a29;
+  --info-color: #4a4de6;
+  --warning-color: #ff9655;
+}
